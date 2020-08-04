@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 @Mapper
-public class GoodsMapper {
+public interface GoodsMapper {
      String tableName = "goods";
      String insertField = "title, price, image, brand";
      String selectField = "id" + insertField;
